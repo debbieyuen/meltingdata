@@ -12,9 +12,7 @@ export function traceCurve(scene, curve, options = {}) {
     loop = true,
   } = options;
 
-  // ----------------------------
   // Build full geometry ONCE
-  // ----------------------------
   const geometry = new THREE.TubeGeometry(
     curve,
     tubularSegments,
@@ -23,17 +21,13 @@ export function traceCurve(scene, curve, options = {}) {
     false
   );
 
-  // ----------------------------
   // Texture
-  // ----------------------------
   const strokeTex = makeStrokeTexture(color);
   strokeTex.wrapS = strokeTex.wrapT = THREE.RepeatWrapping;
   strokeTex.encoding = THREE.sRGBEncoding;
   strokeTex.repeat.set(Math.max(1, Math.round(curve.getLength() * 0.6)), 1);
 
-  // ----------------------------
   // Material
-  // ----------------------------
   const material = new THREE.MeshStandardMaterial({
     color: new THREE.Color(0xffffff).convertSRGBToLinear(),
     map: strokeTex,
@@ -77,12 +71,11 @@ export function traceCurve(scene, curve, options = {}) {
   tube.receiveShadow = false;
   scene.add(tube);
 
-  // ----------------------------
+  
   // Pen
-  // ----------------------------
   const pen = new THREE.Mesh(
-    new THREE.SphereGeometry(radius * 1.6, 12, 10),
-    new THREE.MeshStandardMaterial({ color: 0xffffff })
+    new THREE.SphereGeometry(radius * 1.2, 12, 10),
+    new THREE.MeshStandardMaterial({ color: 0xff69b4 })
   );
   scene.add(pen);
 
