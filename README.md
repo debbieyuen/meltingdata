@@ -12,6 +12,12 @@ This repository contains the Three.js environment that reconstructs and visualiz
 
 https://github.com/user-attachments/assets/f519d097-503d-4b97-aa61-7fc4d972e88c
 
+<img width="1402" height="768" alt="Screenshot 2026-03-09 at 1 55 40 AM" src="https://github.com/user-attachments/assets/75ee46ca-ab45-4899-bb25-793814046517" />
+
+![strokeclassify7](https://github.com/user-attachments/assets/3f634cfb-2627-4a37-835e-24ab5708cd25)
+
+
+
 ## Project Background
 Squiggly translates physical drawing into spatial digital marks using:
 
@@ -41,7 +47,13 @@ The melting in this work is not only visual liquefaction but also structural tra
   * Source pipeline: Apple Vision Pro + custom computer vision system
   * Potential downstream application: Vision Language Action model training
 
-## Resources
+## Resources 
+  * Squiggly App: https://github.com/debbieyuen/spatialui
+  * Hugging Face dataset: https://huggingface.co/datasets/debbieyuen/squigglydataset
+  * Hugging Face ML model: https://huggingface.co/debbieyuen/makerspace
+  * Website: https://theapplevisionpro.vercel.app/
+  * Squiggly App Demo: https://www.youtube.com/watch?v=R19fWD-zwXY&t=48s
+  * Drawing Demo: https://www.youtube.com/watch?v=ldZTil_zFnY&t=4s 
 
 ## Requirements
   * Three.js
